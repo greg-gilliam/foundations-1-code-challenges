@@ -63,7 +63,8 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    const stringArray = arr.map(item => item.name + item.type)
+    return stringArray;
 }
 
 /*
