@@ -87,8 +87,9 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    const cheese = arr.filter(item => item.category === dairy);
-    return cheese;
+    const cheese = arr.filter(item => item.category === 'dairy');
+    const theCheese = cheese.find(item => item.id == 'cheese');
+    return theCheese;
 }
 
 
